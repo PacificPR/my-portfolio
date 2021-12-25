@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  padding: 25px 25px;
+  background-color: rgba(17, 17, 20, 0.6);
+  transform: translateY(calc(var(--nav-scroll-height) * -1));
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+  z-index: 15;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sections div {
+  cursor: pointer;
+  padding: 0 10px;
+  color: white;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.sections div:hover {
+  color: rgb(171, 192, 255);
+  top: -3px;
+}
+
+.dropMenu {
+  display: none;
+}
+
+.dropButton {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sections {
+    display: none;
+  }
+  .dropMenu {
+    display: flex;
+  }
+
+  .dropMenu div {
+    cursor: pointer;
+    padding: 0 10px;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+
+  .dropMenu div:hover {
+    color: rgb(171, 192, 255);
+    top: -3px;
+  }
+
+  .dropButton {
+    display: block;
+    background-color: rgba(17, 17, 20, 0.6);
+    border: none;
+  }
+}

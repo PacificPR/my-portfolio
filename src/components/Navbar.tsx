@@ -18,13 +18,13 @@ const Navbar: NextPage = () => {
         </div>
         <div className={styles.sections}>
           <div>
-            <a href="#">0. About me</a>
+            <a href="#about">0. About me</a>
           </div>
           <div>
-            <a href="#">1. Education</a>
+            <a href="#">1. Projects</a>
           </div>
           <div>
-            <a href="#">2. Work Experience</a>
+            <a href="#">2. Experience</a>
           </div>
           <div>
             <a href="#">3. Contact</a>
@@ -37,7 +37,7 @@ const Navbar: NextPage = () => {
       {menu && (
         <div className={styles.dropMenu}>
           <div>
-            <a href="#">About me</a>
+            <a href="#about">About me</a>
           </div>
           <div>
             <a href="#">Education</a>

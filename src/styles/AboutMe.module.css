@@ -1,0 +1,48 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 15vw;
+}
+
+.about h1 {
+  color: white;
+  font-size: calc(20px + 1.5vw);
+}
+
+.about h3 {
+  color: rgb(91, 196, 238);
+  font-weight: 400;
+  font-size: calc(12px + 1.5vw);
+}
+
+.about .intro {
+  width: 60vw;
+  font-size: calc(12px + 1.5vw);
+}
+
+.about ul.list {
+  display: grid;
+  gap: 0px 7vw;
+  margin: 20px 0 0;
+  grid-template-columns: repeat(2, 0.5fr);
+  /* list-style-image: url("../../public/images/bullet.svg"); */
+  font-size: calc(7px + 1.5vw);
+  overflow: hidden;
+  list-style: none;
+  padding: 0px;
+}
+
+.about ul.list span {
+  color: rgb(53, 235, 235);
+  font-size: calc(7px + 1vw);
+}
+
+.about ul.list p {
+  padding: 0 1vw;
+}
+
+.about ul.list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

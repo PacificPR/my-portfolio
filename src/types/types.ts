@@ -98,3 +98,12 @@ export interface Owner {
   type: string;
   site_admin: boolean;
 }
+
+export interface ProjectType {
+  id: number;
+  title: string;
+  summary: string;
+  "repo-link": string;
+  "external-link": string;
+  "tech-stack": string[];
+}

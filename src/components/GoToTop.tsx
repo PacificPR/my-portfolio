@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "@/src/styles/GoToTop.module.css";
+import { NextPage } from "next";
 
-const GoToTop = () => {
+const GoToTop: NextPage = () => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {

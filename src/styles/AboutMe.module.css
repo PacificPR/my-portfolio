@@ -46,3 +46,23 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+.photo {
+  background-color: blue;
+}
+.resume {
+  align-self: center;
+}
+
+.resume button {
+  background-color: transparent;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+}
+
+.resume button:hover {
+  background-color: #64ffad;
+}

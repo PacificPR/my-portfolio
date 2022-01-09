@@ -1,0 +1,26 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin: 15vw;
+}
+
+.projects h1 {
+  color: white;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2vw;
+}
+
+@media screen and (max-width: 1080px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+}

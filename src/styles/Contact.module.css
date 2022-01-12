@@ -1,0 +1,107 @@
+.contact {
+  background-color: #6100ba;
+  height: max-content;
+  padding: 10px 0;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+.con {
+  padding-top: 40px;
+}
+
+.con ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.con svg {
+  fill: white;
+}
+
+.con svg:hover {
+  fill: turquoise;
+  width: 60px;
+  height: 60px;
+}
+
+.ir {
+  width: 70px;
+  height: 70px;
+}
+
+.footer ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding-bottom: 35px;
+}
+
+.footer ul li {
+  cursor: pointer;
+  position: relative;
+  color: #c4d4dd;
+  width: fit-content;
+  margin: 0 30px;
+}
+
+.footer ul li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0c96db;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer ul li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footer ul li button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.footer ul li a {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.moto h2 {
+  text-align: center;
+}
+
+.info h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.info p {
+  text-align: center;
+  margin-top: 1px;
+}

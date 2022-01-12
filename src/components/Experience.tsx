@@ -6,7 +6,9 @@ import { timelineData } from "../utils/constants";
 const Experience: NextPage = () => {
   return (
     <div className={styles.experience} id="experience">
-      <h1>My journey so far : </h1>
+      <h1>
+        My journey so far <span />
+      </h1>
 
       {timelineData.length > 0 && (
         <div className={styles.timeline}>

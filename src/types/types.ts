@@ -107,3 +107,11 @@ export interface ProjectType {
   "external-link": string;
   "tech-stack": string[];
 }
+
+export interface TimeLineDataType {
+  text: string;
+  date: string;
+  position: string;
+  category: { tag: string; color: string };
+  link: { url: string; text: string };
+}

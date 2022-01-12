@@ -1,11 +1,11 @@
-import { ProjectType } from "../types/types";
+import { ProjectType, TimeLineDataType } from "../types/types";
 
 export const listProjects: ProjectType[] = [
   {
     id: 0,
     title: "create-memes",
     summary:
-      "It is a flask web-app using which one can create memes. You can select from variety of templates and eneter your own texts as labels in them. It is deployed on Heroku.",
+      "It is a flask web-app using which one can create memes. You can select from variety of templates and enter your own texts as labels in them. Used imgflip API. It is deployed on Heroku.",
     "repo-link": "https://github.com/PacificPR/creatememes",
     "external-link": "https://creatememes.herokuapp.com/",
     "tech-stack": ["flask", "jinja", "html", "css", "imgflip api"],
@@ -22,7 +22,7 @@ export const listProjects: ProjectType[] = [
   },
 ];
 
-export const timelineData = [
+export const timelineData: TimeLineDataType[] = [
   {
     text: "Develop platform that helps in accessing data easily. Allow filtering, sorting and other functionalities on the data present on ElasticSearch cluster. Working on tech stack : React, FastApi, AWS and Terraform.",
     date: "August 2021 - Present",
@@ -30,7 +30,6 @@ export const timelineData = [
     category: {
       tag: "Comono India",
       color: "#486164",
-      role: "Full Stack Developer and Co-founder",
     },
     link: {
       url: "https://comono.no",

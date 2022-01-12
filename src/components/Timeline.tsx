@@ -1,6 +1,13 @@
 import styles from "@/src/styles/Experience.module.css";
+import { NextPage } from "next";
+import { TimeLineDataType } from "../types/types";
 
-const Timeline = ({ data, listId }) => {
+interface TimelineProps {
+  data: TimeLineDataType;
+  listId: number;
+}
+
+const Timeline: NextPage<TimelineProps> = ({ data, listId }) => {
   const detail = data.text.trim().split(".");
   detail.pop();
   let pos = "right";

@@ -1,9 +1,6 @@
 import styles from "@/src/styles/ProjectCard.module.css";
 import { ProjectType } from "@/src/types/types";
 import { NextPage } from "next";
-import Link from "next/link";
-import Image from "next/image";
-import { JSXElementConstructor } from "react";
 
 interface ProjectCardProps {
   project: ProjectType;
@@ -17,6 +14,7 @@ const ProjectCard: NextPage<ProjectCardProps> = (props) => {
   let visRepo = "hidden";
   if (project["external-link"]) visExternal = "visible";
   if (project["repo-link"]) visRepo = "visible";
+
   return (
     <div className={styles.project}>
       <h2>{project.title}</h2>
@@ -74,7 +72,6 @@ const ProjectCard: NextPage<ProjectCardProps> = (props) => {
           </a>
         </div>
       </div>
-      <p>Tech stack used : </p>
       <div className={styles.tech}>
         {project["tech-stack"].map((tech) => (
           <p key={tech}>{tech}</p>

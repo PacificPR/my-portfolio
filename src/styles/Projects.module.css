@@ -1,11 +1,24 @@
 .projects {
   display: flex;
   flex-direction: column;
-  margin: 15vw;
+  margin: 25vh 10vw;
 }
 
 .projects h1 {
   color: white;
+  display: flex;
+  place-items: center;
+}
+
+.projects h1 span {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3px;
+  width: 30vw;
+  height: 2px;
+  margin-left: 20px;
+  background-color: #c7158552;
 }
 
 .projects h2 {
@@ -22,5 +35,8 @@
   .list {
     display: flex;
     flex-direction: column;
+  }
+  .projects h1 span {
+    display: none;
   }
 }

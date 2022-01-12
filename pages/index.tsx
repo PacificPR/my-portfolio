@@ -12,7 +12,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>This is Prashant </title>
+        <title>Prashant Jha</title>
+        <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
+        <meta name="description" content="Prashant Jha's portfolio website. " />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar />
       <AboutMe />

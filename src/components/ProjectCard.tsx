@@ -1,6 +1,7 @@
 import styles from "@/src/styles/ProjectCard.module.css";
 import { ProjectType } from "@/src/types/types";
 import { NextPage } from "next";
+import React from "react";
 
 interface ProjectCardProps {
   project: ProjectType;
@@ -24,7 +25,10 @@ const ProjectCard: NextPage<ProjectCardProps> = (props) => {
         ))}
       </ul>
       <div className={styles.links}>
-        <div className={styles.github} style={{ visibility: visRepo }}>
+        <div
+          className={styles.github}
+          style={{ visibility: visRepo } as React.CSSProperties}
+        >
           <a
             target="_blank"
             href={project["repo-link"]}
@@ -45,7 +49,10 @@ const ProjectCard: NextPage<ProjectCardProps> = (props) => {
           </a>
         </div>
 
-        <div className={styles.external} style={{ visibility: visExternal }}>
+        <div
+          className={styles.external}
+          style={{ visibility: visExternal } as React.CSSProperties}
+        >
           <a
             target="_blank"
             href={project["external-link"]}

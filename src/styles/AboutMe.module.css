@@ -1,12 +1,14 @@
 .about {
   display: flex;
   flex-direction: column;
-  margin: 15vw;
+  margin: 20vh 10vw;
 }
 
 .about h1 {
   color: white;
   font-size: calc(20px + 1.5vw);
+  text-shadow: 3px 6px 4px #1a1010;
+  margin: 0;
 }
 
 .about h3 {
@@ -16,8 +18,22 @@
 }
 
 .about .intro {
-  width: 60vw;
   font-size: calc(12px + 1.5vw);
+  color: #0b0b0c;
+  letter-spacing: 2px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.brief {
+  flex-direction: column;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  text-align: center;
 }
 
 .about ul.list {
@@ -25,7 +41,6 @@
   gap: 0px 7vw;
   margin: 20px 0 0;
   grid-template-columns: repeat(2, 0.5fr);
-  /* list-style-image: url("../../public/images/bullet.svg"); */
   font-size: calc(7px + 1.5vw);
   overflow: hidden;
   list-style: none;
@@ -47,22 +62,32 @@
   align-items: center;
 }
 
+.skills h2 {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
 .photo {
   background-color: blue;
 }
 .resume {
   align-self: center;
+  margin-top: 80px;
 }
 
-.resume button {
+.resume a {
   background-color: transparent;
   cursor: pointer;
-  border-style: solid;
+  border: 5px solid #1acddd;
   border-radius: 10px;
-  height: 40px;
-  width: 80px;
+  font-size: 20px;
+  padding: 12px;
+  color: white;
 }
 
-.resume button:hover {
-  background-color: #64ffad;
+.resume a:hover {
+  background-color: #b9e7fad3;
+  color: rgb(61, 8, 41);
 }

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Router from "next/router";
 import Image from "next/image";
 import styles from "@/src/styles/Navbar.module.css";
 
@@ -10,14 +10,14 @@ const Navbar: NextPage = () => {
     <header className={styles.header} id="top">
       <div className={styles.navbar}>
         <div className={styles.logo}>
-          <Link href="/" passHref>
+          <a onClick={() => Router.reload()}>
             <Image
               src="/images/P.svg"
               alt="prashant-logo"
               width={80}
               height={50}
             />
-          </Link>
+          </a>
         </div>
         <div className={styles.sections}>
           <div>
@@ -40,16 +40,24 @@ const Navbar: NextPage = () => {
       {menu && (
         <div className={styles.dropMenu}>
           <div>
-            <a href="#about">About me</a>
+            <a href="#about" onClick={() => setMenu(false)}>
+              About me
+            </a>
           </div>
           <div>
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={() => setMenu(false)}>
+              Projects
+            </a>
           </div>
           <div>
-            <a href="#experience">Experience</a>
+            <a href="#experience" onClick={() => setMenu(false)}>
+              Experience
+            </a>
           </div>
           <div>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => setMenu(false)}>
+              Contact
+            </a>
           </div>
         </div>
       )}

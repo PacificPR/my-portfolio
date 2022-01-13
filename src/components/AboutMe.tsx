@@ -1,7 +1,7 @@
 import styles from "@/src/styles/AboutMe.module.css";
 import { NextPage } from "next";
 import Image from "next/image";
-import Head from "next/head";
+
 const AboutMe: NextPage = () => {
   return (
     <div id="about" className={styles.about}>

@@ -33,7 +33,7 @@ const GoToTop: NextPage = () => {
     >
       <Image
         src="/images/go-to-top.svg"
-        alt="Go to top"
+        alt="Go to top arrow"
         width={40}
         height={40}
       />

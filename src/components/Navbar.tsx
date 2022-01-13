@@ -34,7 +34,12 @@ const Navbar: NextPage = () => {
           </div>
         </div>
         <button className={styles.dropButton} onClick={() => setMenu(!menu)}>
-          <Image src="/images/bars.svg" alt="menu" width={40} height={40} />
+          <Image
+            src="/images/bars.svg"
+            alt="menu dropdown"
+            width={40}
+            height={40}
+          />
         </button>
       </div>
       {menu && (

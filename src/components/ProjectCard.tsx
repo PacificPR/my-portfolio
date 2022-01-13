@@ -31,7 +31,7 @@ const ProjectCard: NextPage<ProjectCardProps> = (props) => {
         >
           <a
             target="_blank"
-            href={project["repo-link"]}
+            href={project["repo-link"] ? project["repo-link"] : "/"}
             rel="noopener noreferrer"
           >
             <svg
@@ -55,7 +55,7 @@ const ProjectCard: NextPage<ProjectCardProps> = (props) => {
         >
           <a
             target="_blank"
-            href={project["external-link"]}
+            href={project["external-link"] ? project["external-link"] : "/"}
             rel="noopener noreferrer"
           >
             <svg

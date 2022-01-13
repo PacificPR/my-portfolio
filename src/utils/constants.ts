@@ -26,7 +26,7 @@ export const timelineData: TimeLineDataType[] = [
   {
     text: "Develop platform that helps in accessing data easily. Allow filtering, sorting and other functionalities on the data present on ElasticSearch cluster. Working on tech stack : React, FastApi, AWS and Terraform.",
     date: "August 2021 - Present",
-    position: "Software Developer",
+    position: "Software Developer and Co-founder",
     category: {
       tag: "Comono India",
       color: "#486164",

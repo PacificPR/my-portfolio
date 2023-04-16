@@ -6,7 +6,6 @@ import Projects from "@/src/components/Projects";
 import Experience from "@/src/components/Experience";
 import Contact from "@/src/components/Contact";
 import GoToTop from "@/src/components/GoToTop";
-import styles from "@/src/styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
